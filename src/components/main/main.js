@@ -5,16 +5,8 @@ import ScrollableNarrative from "../scrollable-narrative/scrollable-narrative";
 import VideoPlayer from "../video-player/video-player";
 import { VideoUrls } from "../utils/config";
 
-const NarrativeSection = styled.div`
-  border: 1px dashed green;
-  height: 100vh;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-`
 
 const VideoSection = styled.div`
-  border: 1px dashed yellow;
   height: 100vh;
   padding: 1rem;
   display: flex;
@@ -23,25 +15,10 @@ const VideoSection = styled.div`
 `
 
 const AudioSection = styled.div`
-    border: 1px dashed red;
 
 `
 
 const MainTextBox = styled.div`
-    border: 1px dashed purple;
-    border: 1px dashed blue;
-`
-
-const ScrollableTextBox = styled.div`
-  height: 60vh;
-  overflow-y: scroll;
-  border: 1px dashed pink;
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: rgb(54, 54, 82);
-  }
 `
 
 class Main extends React.Component {
@@ -68,7 +45,7 @@ class Main extends React.Component {
             <VideoPlayer url={this.state.url} />
         </VideoSection>
         <AudioSection>
-            <p> Audio </p>
+            <p> Audio Player </p>
         </AudioSection>
         <MainTextBox>
         <p>

@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { VideoUrls } from "../utils/config";
 
 const ScrollableNarrativeWrapper = styled.div`
-  border: 1px dashed green;
   height: 100vh;
   padding: 1rem;
   display: flex;
@@ -12,7 +11,6 @@ const ScrollableNarrativeWrapper = styled.div`
 const ScrollableTextBox = styled.div`
   height: 60vh;
   overflow-y: scroll;
-  border: 1px dashed black;
   padding: 0.5rem;
   ::-webkit-scrollbar {
     width: 10px;

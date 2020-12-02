@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components";
+import { VideoUrls } from "../utils/config";
 
 const ScrollableNarrativeWrapper = styled.div`
   border: 1px dashed green;
@@ -44,9 +45,9 @@ const ScrollableNarrative = props => {
       <ScrollableTextBox>
         <p>
           {" "}
-          I'm baby tousled salvia gentrify, tempor anim qui readymade kale chips
+          I'm baby <ClickableText onClick={() => onClickEvent(VideoUrls.POLLINATOR)}>pollinator</ClickableText>  salvia gentrify, tempor anim qui readymade kale chips
           DIY. Adipisicing tofu narwhal distillery nulla leggings four loko
-          glossier <ClickableText onClick={() => onClickEvent("lumber")}>lumbersexual</ClickableText>  90's authentic fanny pack cardigan you probably
+          glossier <ClickableText onClick={() => onClickEvent(VideoUrls.PLANT_DESTROYER)}>plant destroyer</ClickableText>  90's authentic fanny pack cardigan you probably
           haven't heard of them pinterest. Master cleanse fingerstache
           distillery adipisicing. Neutra messenger bag pitchfork narwhal. Retro
           yuccie cronut pork belly. Selvage sunt magna, kale chips af disrupt

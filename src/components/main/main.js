@@ -2,6 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import { TwoColumnSection } from "../styles/styles"
 import ScrollableNarrative from "../scrollable-narrative/scrollable-narrative";
+import VideoPlayer from "../video-player/video-player";
+import { VideoUrls } from "../utils/config";
 
 const NarrativeSection = styled.div`
   border: 1px dashed green;
@@ -46,12 +48,15 @@ class Main extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      index: 0
+      url: VideoUrls.PLANT_DESTROYER
     }
   }
 
   onSelectAgent = (agent) => {
     console.log('Agent: ' + agent);
+    this.setState({
+        url: agent
+    })
 
   }
 
@@ -60,7 +65,7 @@ class Main extends React.Component {
       <TwoColumnSection>
         <ScrollableNarrative onSelectAgent={(agent) => this.onSelectAgent(agent)}  />
         <VideoSection>
-            <p> Video</p>
+            <VideoPlayer url={this.state.url} />
         </VideoSection>
         <AudioSection>
             <p> Audio </p>

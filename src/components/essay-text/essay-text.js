@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components";
+import { size } from "../styles/styles";
 
 const EssayTextWrapper = styled.div`
     padding: 1rem;
@@ -9,6 +10,7 @@ const EssayTextWrapper = styled.div`
 const EssayText = props => {
   return (
     <EssayTextWrapper>
+        <h3> Text </h3>
         <p>
           {" "}
           I'm baby pollinator salvia gentrify, tempor anim qui readymade kale chips

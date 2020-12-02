@@ -17,7 +17,9 @@ const VideoSection = styled.div`
 `
 
 const AudioSection = styled.div`
-
+    padding: 1rem;
+`
+const Title = styled.h3`
 `
 
 class Main extends React.Component {
@@ -44,6 +46,7 @@ class Main extends React.Component {
             <VideoPlayer url={this.state.url} />
         </VideoSection>
         <AudioSection>
+            <Title> Podcast </Title>
             <AudioPlayer />
         </AudioSection>
         <EssayText />

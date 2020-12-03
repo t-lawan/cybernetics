@@ -31,6 +31,10 @@ export const ClickableText = styled.span`
   }
 `
 
+export const CrossedOutText = styled.span`
+  text-decoration: line-through;
+`
+
 const ScrollableNarrative = props => {
   const onClickEvent = agent => {
     props.onSelectAgent(agent)
@@ -56,7 +60,7 @@ const ScrollableNarrative = props => {
         <p>
           A cosmological-contingent bolide event. A 4-meter asteroid enters
           Earth’s atmosphere, its trajectory lining up with industrial
-          agricultural plant AHEARN (latitude: 0.7893° S, longitude: 113.9213°
+          agricultural plant AHEARN latitude: <CrossedOutText> 0.7893° S</CrossedOutText>, longitude: <CrossedOutText> 113.9213°</CrossedOutText> 
           E). A graduate student working on a commercial attenuo-botany thesis
           records “intermittent pink rain over a period of 84 hours” following
           this event. Burning up during the process ofatmospheric entry, only a

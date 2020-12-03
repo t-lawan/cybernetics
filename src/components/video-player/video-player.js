@@ -25,7 +25,7 @@ class VideoPlayer extends React.Component {
     render() {
       return (
           <VideoPlayerWrapper>
-                <StyledVideoPlayer url={this.props.url} volume={1} muted={true} pip={true} />
+                <StyledVideoPlayer url={this.props.url} loop={true} volume={1} playing={true} muted={true} pip={true} />
           </VideoPlayerWrapper>
       )
     }

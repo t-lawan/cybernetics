@@ -1,7 +1,7 @@
 import styled, { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
     * {
   box-sizing: border-box;
   ::-webkit-scrollbar {

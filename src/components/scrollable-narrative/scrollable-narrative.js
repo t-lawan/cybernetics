@@ -13,7 +13,7 @@ const ScrollableTextBox = styled.div`
   overflow-y: scroll;
   padding: 0.5rem;
   ::-webkit-scrollbar {
-    width: 10px;
+    width: 7px;
   }
   ::-webkit-scrollbar-thumb {
     background: black;

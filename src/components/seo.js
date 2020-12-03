@@ -26,7 +26,7 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const defaultTitle = site.siteMetadata?.title
+  const defaultTitle = "Room Eighteen"
 
   return (
     <Helmet
@@ -69,7 +69,11 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet" /> 
+
+    </Helmet>
   )
 }
 

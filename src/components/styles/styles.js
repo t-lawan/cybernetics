@@ -1,7 +1,14 @@
 import styled, { createGlobalStyle } from "styled-components"
-
+import VectorAncientSymbol from "../assets/FontsVectorAncientSymbol.otf"
 export const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+${'' /* @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap'); */}
+
+@font-face {
+    font-family: VectorAncientSymbol;
+    src: url(${VectorAncientSymbol}) format('otf');
+    font-weight: normal;
+    font-style: normal;
+  }
     * {
   box-sizing: border-box;
   ::-webkit-scrollbar {
@@ -13,7 +20,7 @@ export const GlobalStyle = createGlobalStyle`
 }
 html,
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'East Sea Dokdo', cursive;
   width: 100vw;
   width: 100%;
   height: 100%;
@@ -105,7 +112,7 @@ export const size = {
   tablet: "768px",
   laptop: "1024px",
   laptopL: "1440px",
-  desktop: "1500px",
+  desktop: "1500px"
 }
 
 export const TwoColumnSection = styled.div`

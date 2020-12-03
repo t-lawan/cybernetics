@@ -1,6 +1,6 @@
 import React from "react"
-import styled from "styled-components";
-import { VideoUrls } from "../utils/config";
+import styled from "styled-components"
+import { VideoUrls } from "../utils/config"
 
 const ScrollableNarrativeWrapper = styled.div`
   height: 100vh;
@@ -22,56 +22,88 @@ const ScrollableTextBox = styled.div`
 
 const ClickableText = styled.span`
   color: green;
-  text-decoration: underline; 
+  text-decoration: underline;
   text-decoration-color: black;
   font-style: italic;
   cursor: pointer;
-  :hover{
+  :hover {
     transform: rotate(1deg);
   }
-
 `
 
 const ScrollableNarrative = props => {
-
-  const onClickEvent = (agent) => {
-    props.onSelectAgent(agent);
-  } 
+  const onClickEvent = agent => {
+    props.onSelectAgent(agent)
+  }
 
   return (
     <ScrollableNarrativeWrapper>
       <ScrollableTextBox>
+        <p>Y. 2083</p>
         <p>
-          {" "}
-          I'm baby <ClickableText onClick={() => onClickEvent(VideoUrls.POLLINATOR)}>pollinator</ClickableText>  salvia gentrify, tempor anim qui readymade kale chips
-          DIY. Adipisicing tofu narwhal distillery nulla leggings four loko
-          glossier <ClickableText onClick={() => onClickEvent(VideoUrls.PLANT_DESTROYER)}>plant destroyer</ClickableText>  90's authentic fanny pack cardigan you probably
-          haven't heard of them pinterest. Master cleanse fingerstache
-          distilleryc  adipisicing. Neutra messenger bag pitchfork narwhal. Retro
-          yuccie cronut pork belly. Selvage sunt magna, kale chips af disrupt
-          fingerstache nostrud. +1 banjo non, live-edge meggings trust fund
-          locavore <ClickableText onClick={() => onClickEvent(VideoUrls.FUNGI)}>fungi</ClickableText> single-origin coffee cupidatat nisi duis selvage biodiesel do
-          pok pok. Trust fund jianbing qui, kickstarter farm-to-table skateboard
-          you probably haven't heard of them. <ClickableText onClick={() => onClickEvent(VideoUrls.CAPITAL)}>capital</ClickableText> Ut officia 90's knausgaard
-          gentrify coloring book anim. Ugh lo-fi green juice kitsch lorem plaid.
-          Fixie pour-over kitsch VHS pitchfork unicorn. Brunch shaman YOLO,
-          pinterest VHS live-edge next level labore <ClickableText onClick={() => onClickEvent(VideoUrls.SUGARCANE)}>sugarcane</ClickableText> twee selvage venmo. +1 raw
-          denim jianbing, disrupt kogi nostrud fanny pack. Blog synth shoreditch
-          incididunt. Tumblr neutra ea intelligentsia, lorem butcher incididunt
-          man braid. Ugh adaptogen knausgaard quis, vinyl<ClickableText onClick={() => onClickEvent(VideoUrls.SOYBEAN)}>soybean</ClickableText>  activated charcoal
-          consequat palo santo ea reprehenderit. Asymmetrical fashion axe
-          sustainable fugiat lomo vaporware irony fixie raw denim artisan pop-up
-          8-bit retro lo-fi aliqua. Tbh hella marfa artisan, retro culpa 8-bit
-          helvetica deep v everyday carry. Ut try-hard single-origin coffee,
-          direct trade nulla mustache vinyl photo booth. Laborum VHS DIY
-          farm-to-table, gochujang sed vinyl velit pug listicle. Before they
-          sold out jianbing in activated charcoal proident, church-key butcher
-          flexitarian. Ut blue bottle narwhal meggings slow-carb. Sed try-hard
-          chambray af. Vaporware pabst semiotics synth leggings exercitation
-          lo-fi voluptate trust fund sriracha qui pour-over. Raw denim echo park
-          prism chambray salvia, drinking vinegar fingerstache trust fund. Next
-          level paleo ex retro ennui truffaut schlitz, in disrupt craft beer
-          tumblr.
+          In the writhing mud, torn apart and rototilled, a new bacterial strain
+          is formed. The product of lateral gene transfer between cellular
+          populations at the ragged edge of invasive industrial agriculture. A.
+          <ClickableText onClick={() => onClickEvent(VideoUrls.CAPITAL)}>capillatastrain OXX552 </ClickableText> is a nitrogen fixer living in cereal roots. In a
+          bacterio-contingent event (like a grain of salt in crystal solution),
+          OXX552 epigenetically activates a long dormant gene, triggering an
+          evolutionary timebomb, flicking a lycanthropic phenotype on, bypassing
+          anti-carcinogenic bio-kill switches. In shared soil, <ClickableText onClick={() => onClickEvent(VideoUrls.SOYBEAN)}>soybean </ClickableText> and
+          <ClickableText onClick={() => onClickEvent(VideoUrls.SUGARCANE)}> sugarcane</ClickableText> escape algorithmic predictions and burst into wild tangles
+          of life.
+        </p>
+        <p>Y. 2087 </p>
+        <p>
+          A cosmological-contingent bolide event. A 4-meter asteroid enters
+          Earth’s atmosphere, its trajectory lining up with industrial
+          agricultural plant AHEARN (latitude: 0.7893° S, longitude: 113.9213°
+          E). A graduate student working on a commercial attenuo-botany thesis
+          records “intermittent pink rain over a period of 84 hours” following
+          this event. Burning up during the process ofatmospheric entry, only a
+          microscopic quantity of meteorite dust reaches soil. It remains
+          un-recovered and un-processed. This dust contains extremophilic
+          exo-lichen P. Siebert. Resuscitated by contact with soil, a <ClickableText onClick={() => onClickEvent(VideoUrls.FUNGI)}>fungal
+          sub-system </ClickableText> of the lichen proves a formidable biohacker and cordyceps
+          analog. Hijacking pollinators to slip through quarantine and
+          contamination nets.
+        </p>
+        <p>Y. 2059 </p>
+        <p>
+          Satellitic NGO operators deploy prototype soft robotics project
+          <ClickableText onClick={() => onClickEvent(VideoUrls.POLLINATOR)}> p0llin8.tor </ClickableText>: 3d printedand self-replicating, made from 100%
+          compostable parts, mulch-silicate micro-fibers latticed together
+          according to the hottest auto-fractalizingframework for synthetic hive
+          systems. p0llin8.tor gets to work. Deploying slick convolutional
+          recurrent neural network software directly into crop ovaries, it
+          induces pollinator-receptive behavior in crops with no history of
+          pollination.
+        </p>
+        <p>Y. 2058–2095</p>
+        <p>
+          Nano-fractal trading algorithms, operating at speeds incomprehensible
+          speeds, predict a catastrophic drop in stock priceof EVEA agrochemical
+          roughly 40 years down the line. They immediately subcontract GMG
+          eco-consultancy, who identify recently deployed synthetic pollinators
+          as the most stochastically significant event. GMG subcontract Pairbank
+          Genetics, who design a genomic re-patterning of an extant  <ClickableText onClick={() => onClickEvent(VideoUrls.PLANT_DESTROYER)}> predator</ClickableText>  to
+          selectively eliminate the pollinators. After filing for patent rights
+          over the re-patterning, Pairbank Genetics subcontract AQQ precision
+          bioscience (a subsidiary of EVEA agrochemical) to mass-produce the
+          predator, A. Supergrand. It has now been over 30 years since the
+          potential stock crash was predicted, and it has disappeared from
+          current best algorithmic predictions. However, $700 billion have now
+          been sunk into the project, significant parts of which are public
+          money. Results are expected. To keep costs in check AQQ lobbies to
+          bypass a series of safety tests (citing a range of international
+          climate emergency response law). The predators aremanufactured and
+          shipped out. Due to a minor epigenetic mis-implementation, the
+          incorrect chiral form of a key protein is produced in the re-patterned
+          predator. Structurally identical, but rotationally asymmetrical, this
+          error has a significant impact on the predator’s behavior causing it
+          to primarily target the plants it was meant to protect. This results
+          in a catastrophic drop in EVEA stock prices (as mis-predicted by the
+          fractal algorithms). Two quality assurance workers at AQQ precision
+          science are fired and face serious fines.
         </p>
       </ScrollableTextBox>
     </ScrollableNarrativeWrapper>

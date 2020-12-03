@@ -16,7 +16,7 @@ const ScrollableTextBox = styled.div`
     width: 10px;
   }
   ::-webkit-scrollbar-thumb {
-    background: green;
+    background: black;
   }
 `
 

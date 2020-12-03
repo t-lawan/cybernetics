@@ -20,7 +20,7 @@ const ScrollableTextBox = styled.div`
   }
 `
 
-const ClickableText = styled.span`
+export const ClickableText = styled.span`
   color: green;
   text-decoration: underline;
   text-decoration-color: black;
@@ -43,7 +43,7 @@ const ScrollableNarrative = props => {
         <p>
           In the writhing mud, torn apart and rototilled, a new bacterial strain
           is formed. The product of lateral gene transfer between cellular
-          populations at the ragged edge of invasive industrial agriculture. A.
+          populations at the ragged edge of invasive industrial agriculture. A. 
           <ClickableText onClick={() => onClickEvent(VideoUrls.CAPITAL)}>capillatastrain OXX552 </ClickableText> is a nitrogen fixer living in cereal roots. In a
           bacterio-contingent event (like a grain of salt in crystal solution),
           OXX552 epigenetically activates a long dormant gene, triggering an
@@ -69,7 +69,7 @@ const ScrollableNarrative = props => {
         </p>
         <p>Y. 2059 </p>
         <p>
-          Satellitic NGO operators deploy prototype soft robotics project
+          Satellitic NGO operators deploy prototype soft robotics project 
           <ClickableText onClick={() => onClickEvent(VideoUrls.POLLINATOR)}> p0llin8.tor </ClickableText>: 3d printedand self-replicating, made from 100%
           compostable parts, mulch-silicate micro-fibers latticed together
           according to the hottest auto-fractalizingframework for synthetic hive

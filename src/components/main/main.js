@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { TwoColumnSection } from "../styles/styles"
-import ScrollableNarrative from "../scrollable-narrative/scrollable-narrative";
+import ScrollableNarrative, { ClickableText } from "../scrollable-narrative/scrollable-narrative";
 import VideoPlayer from "../video-player/video-player";
 import { VideoUrls } from "../utils/config";
 import EssayText from "../essay-text/essay-text";
@@ -14,6 +14,7 @@ const VideoSection = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 `
 
 const AudioSection = styled.div`
@@ -44,6 +45,7 @@ class Main extends React.Component {
         <ScrollableNarrative onSelectAgent={(agent) => this.onSelectAgent(agent)}  />
         <VideoSection>
             <VideoPlayer url={this.state.url} />
+            {this.state.url !== VideoUrls.MAIN ? <ClickableText onClick={() => this.onSelectAgent(VideoUrls.MAIN)}>WATCH SIMULATION</ClickableText> : null}
         </VideoSection>
         <AudioSection>
             <Title> Podcast </Title>

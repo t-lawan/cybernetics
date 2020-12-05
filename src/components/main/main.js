@@ -5,8 +5,7 @@ import ScrollableNarrative, { ClickableText } from "../scrollable-narrative/scro
 import VideoPlayer from "../video-player/video-player";
 import { VideoUrls } from "../utils/config";
 import EssayText from "../essay-text/essay-text";
-import AudioPlayer from "../audio-player/audio-player";
-
+import DeathSpirals from "../assets/DeathSpirals.wav"
 
 const VideoSection = styled.div`
   height: 100vh;
@@ -25,7 +24,8 @@ const Title = styled.h3`
 
 class Main extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
+    
     this.state = {
       url: VideoUrls.MAIN
     }
@@ -49,7 +49,12 @@ class Main extends React.Component {
         </VideoSection>
         <AudioSection>
             <Title> Podcast </Title>
-            <AudioPlayer />
+            <div>
+              <audio autoPlay={true} controls>
+                <source src={DeathSpirals} type="audio/wav" />
+                If you're reading this, audio isn't supported. 
+            </audio>
+            </div>
         </AudioSection>
         <EssayText />
       </TwoColumnSection>

@@ -45,7 +45,7 @@ class Main extends React.Component {
         <ScrollableNarrative onSelectAgent={(agent) => this.onSelectAgent(agent)}  />
         <VideoSection>
             <VideoPlayer url={this.state.url} />
-            {this.state.url !== VideoUrls.MAIN ? <ClickableText onClick={() => this.onSelectAgent(VideoUrls.MAIN)}>WATCH SIMULATION</ClickableText> : null}
+            {this.state.url !== VideoUrls.MAIN ? <ClickableText onClick={() => this.onSelectAgent(VideoUrls.MAIN)}>RETURN TO SIMULATION</ClickableText> : null}
         </VideoSection>
         <AudioSection>
             <Title> Podcast </Title>

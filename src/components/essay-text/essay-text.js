@@ -216,13 +216,14 @@ const EssayText = props => {
         Scholarpedia, 9(8):29958
         (http://www.scholarpedia.org/w/index.php?title=Pinning_control&action=cite&rev=14329)
       </p>
-      <p>
+
         <p>
           Chen Xu, Xinsong Yang, Jianquan Lu,Member, IEEE, Jianwen Feng, Fuad E.
           Alsaadi, and Tasawar Hayat (2018), Finite-Time Synchronization of
           Networks via Quantized Intermittent Pinning Control. IEEE TRANSACTIONS
           ON CYBERNETICS, VOL. 48, NO. 10
         </p>
+
         <p> Yuk Hui (), Preface: The Time of, Execution</p>
         <EssayHeading> Glossary: </EssayHeading>
         <p>
@@ -231,10 +232,12 @@ const EssayText = props => {
           interconnected in a pattern or structure that produces a
           characteristic set of behaviours.. ‘ (Meadows, 2008 , pp 188)
         </p>
+        <p> 
         Real-Time system - A real-time system operates with a time constraint,
         where the time that the output produced is significant. In other words,
         producing the output at some other time than the required time may be
         meaningless.
+        </p>
         <p>
           System theory - “A framework for conceptualising the self-regulatory
           and self-organising processes governing inputs to systems, the
@@ -261,8 +264,6 @@ const EssayText = props => {
           `}
         </EssayCodeText>
         <p> Temporal Interval – The clock time between an agent’s simultaneities.</p>
-        
-      </p>
     </EssayTextWrapper>
   )
 }

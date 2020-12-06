@@ -1,6 +1,13 @@
 import React from "react"
 import styled from "styled-components"
 import { VideoUrls } from "../utils/config"
+import Cane from '../../images/cane.png';
+import Capital from '../../images/capital.png';
+import Destroyer from '../../images/destroyer.png';
+import Fungi from '../../images/fungi.png';
+import Soy from '../../images/soy.png';
+import Pollinator from '../../images/pollinator.png';
+
 
 const ScrollableNarrativeWrapper = styled.div`
   height: 100vh;
@@ -20,12 +27,22 @@ const ScrollableTextBox = styled.div`
   }
 `
 
+const Images = {
+  CANE: Cane,
+  CAPITAL: Capital,
+  DESTROYER: Destroyer,
+  FUNGI: Fungi,
+  SOY: Soy,
+  POLLINATOR: Pollinator
+}
+
 export const ClickableText = styled.span`
+  cursor: url(${props => props.image ? props.image: Images.CANE}) 15 15, pointer;
+
   color: green;
   text-decoration: underline;
   text-decoration-color: black;
   font-style: italic;
-  cursor: pointer;
   :hover {
     transform: rotate(1deg);
   }
@@ -48,12 +65,12 @@ const ScrollableNarrative = props => {
           In the writhing mud, torn apart and rototilled, a new bacterial strain
           is formed. The product of lateral gene transfer between cellular
           populations at the ragged edge of invasive industrial agriculture. A. 
-          <ClickableText onClick={() => onClickEvent(VideoUrls.CAPITAL)}>capillatastrain OXX552 </ClickableText> is a nitrogen fixer living in cereal roots. In a
+          <ClickableText image={Images.CAPITAL} onClick={() => onClickEvent(VideoUrls.CAPITAL)}>capillatastrain OXX552 </ClickableText> is a nitrogen fixer living in cereal roots. In a
           bacterio-contingent event (like a grain of salt in crystal solution),
           OXX552 epigenetically activates a long dormant gene, triggering an
           evolutionary timebomb, flicking a lycanthropic phenotype on, bypassing
-          anti-carcinogenic bio-kill switches. In shared soil, <ClickableText onClick={() => onClickEvent(VideoUrls.SOYBEAN)}>soybean </ClickableText> and
-          <ClickableText onClick={() => onClickEvent(VideoUrls.SUGARCANE)}> sugarcane</ClickableText> escape algorithmic predictions and burst into wild tangles
+          anti-carcinogenic bio-kill switches. In shared soil, <ClickableText image={Images.SOY} onClick={() => onClickEvent(VideoUrls.SOYBEAN)}>soybean </ClickableText> and
+          <ClickableText image={Images.CANE}  onClick={() => onClickEvent(VideoUrls.SUGARCANE)}> sugarcane</ClickableText> escape algorithmic predictions and burst into wild tangles
           of life.
         </p>
         <p>Y. 2087 </p>
@@ -66,7 +83,7 @@ const ScrollableNarrative = props => {
           this event. Burning up during the process ofatmospheric entry, only a
           microscopic quantity of meteorite dust reaches soil. It remains
           un-recovered and un-processed. This dust contains extremophilic
-          exo-lichen P. Siebert. Resuscitated by contact with soil, a <ClickableText onClick={() => onClickEvent(VideoUrls.FUNGI)}>fungal
+          exo-lichen P. Siebert. Resuscitated by contact with soil, a <ClickableText image={Images.FUNGI} onClick={() => onClickEvent(VideoUrls.FUNGI)}>fungal
           sub-system </ClickableText> of the lichen proves a formidable biohacker and cordyceps
           analog. Hijacking pollinators to slip through quarantine and
           contamination nets.
@@ -74,7 +91,7 @@ const ScrollableNarrative = props => {
         <p>Y. 2059 </p>
         <p>
           Satellitic NGO operators deploy prototype soft robotics project 
-          <ClickableText onClick={() => onClickEvent(VideoUrls.POLLINATOR)}> p0llin8.tor </ClickableText>: 3d printedand self-replicating, made from 100%
+          <ClickableText image={Images.POLLINATOR}  onClick={() => onClickEvent(VideoUrls.POLLINATOR)}> p0llin8.tor </ClickableText>: 3d printedand self-replicating, made from 100%
           compostable parts, mulch-silicate micro-fibers latticed together
           according to the hottest auto-fractalizingframework for synthetic hive
           systems. p0llin8.tor gets to work. Deploying slick convolutional

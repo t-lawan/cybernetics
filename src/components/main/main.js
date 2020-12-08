@@ -22,6 +22,12 @@ const AudioSection = styled.div`
 const Title = styled.h3`
 `
 
+const DownloadSection = styled.section`
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+`
+
 class Main extends React.Component {
   constructor(props) {
     super(props);
@@ -55,6 +61,10 @@ class Main extends React.Component {
                 If you're reading this, audio isn't supported. 
             </audio>
             </div>
+            <DownloadSection>
+            <ClickableText> Download Simulation</ClickableText>
+
+            </DownloadSection>
         </AudioSection>
         <EssayText />
       </TwoColumnSection>

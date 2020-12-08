@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import { size } from "../styles/styles"
+import HursellTime from '../../images/hursell.png';
+import Feedback from '../../images/feedback.png';
 
 const EssayTextWrapper = styled.div`
   padding: 1rem;
@@ -12,6 +13,12 @@ const EssayCodeText = styled.p`
   padding: 1rem;
   white-space: pre-line;
   font-style: italic;
+`
+
+const Image = styled.img`
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 `
 
 const EssayText = props => {
@@ -61,8 +68,7 @@ const EssayText = props => {
         retention (virtual memory) and a perception (the real perceived via
         phenomena).
       </p>
-
-      <h2> IMAGE </h2>
+      <Image src={HursellTime}></Image>
       <p>
         For each agent in the system that we ascribe duration to we must imagine
         it carried along this timeline. As Yuk Hui asserts in Recursivity and
@@ -248,11 +254,11 @@ const EssayText = props => {
           that allows a change in a stock to affect a flow into or out of that
           same stock” (Meadows, 2008 , pp 188)
         </p>
-        <h2>IMAGE</h2>
+        <Image src={Feedback}></Image>
         <p>
           Recursivity - “A recursive function (in Computer Science) simply means
           a function that calls itself until a halting state is reached.” (Yuk
-          Hui) “Programming makes use of routines called ‘procedures’ which may
+          Hui). “Programming makes use of routines called ‘procedures’ which may
           need to execute other procedures. In self-referential programming, the
           procedure calls itself.” (Ron Eglash)
         </p>

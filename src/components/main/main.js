@@ -6,7 +6,7 @@ import VideoPlayer from "../video-player/video-player";
 import { VideoUrls } from "../utils/config";
 import EssayText from "../essay-text/essay-text";
 import DeathSpirals from "../assets/DeathSpirals.wav"
-
+// import Simulation from '../assets/INTERCROPPING_SIMULATION.zip';
 const VideoSection = styled.div`
   height: 100vh;
   padding: 1rem;
@@ -26,6 +26,18 @@ const DownloadSection = styled.section`
   display: flex;
   flex-direction: row;
   padding: 1rem;
+`
+
+export const ClickableLink = styled.a`
+  cursor: pointer;
+
+  color: green;
+  text-decoration: underline;
+  text-decoration-color: black;
+  font-style: italic;
+  :hover {
+    transform: rotate(1deg);
+  }
 `
 
 class Main extends React.Component {
@@ -62,7 +74,7 @@ class Main extends React.Component {
             </audio>
             </div>
             <DownloadSection>
-            <ClickableText> Download Simulation for Mac</ClickableText>
+            <ClickableLink href={DeathSpirals} target="__blank"> Download Simulation for Mac</ClickableLink>
 
             </DownloadSection>
         </AudioSection>

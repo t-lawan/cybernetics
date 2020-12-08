@@ -62,7 +62,7 @@ class Main extends React.Component {
             </audio>
             </div>
             <DownloadSection>
-            <ClickableText> Download Simulation</ClickableText>
+            <ClickableText> Download Simulation for Mac</ClickableText>
 
             </DownloadSection>
         </AudioSection>

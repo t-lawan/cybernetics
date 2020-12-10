@@ -74,7 +74,7 @@ class Main extends React.Component {
             </audio>
             </div>
             <DownloadSection>
-            <ClickableLink href={DeathSpirals} target="__blank"> Download Simulation for Mac</ClickableLink>
+            <ClickableLink href={"https://marie-leuder.s3.eu-west-2.amazonaws.com/INTERCROPPING_SIMULATION.zip"} target="__blank"> Download Simulation for Mac</ClickableLink>
 
             </DownloadSection>
         </AudioSection>

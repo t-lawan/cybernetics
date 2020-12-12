@@ -49,7 +49,7 @@ body {
 }
 h2 {
   margin-bottom: 1.45rem;
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 1.1;
 }
 h3 {
@@ -82,7 +82,7 @@ img {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
-p, a{
+p, a, li{
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;

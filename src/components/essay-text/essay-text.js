@@ -1,17 +1,21 @@
 import React from "react"
 import styled from "styled-components"
-import HursellTime from '../../images/hursell.png';
-import Feedback from '../../images/feedback.png';
+import HursellTime from "../../images/hursell.png"
+import Feedback from "../../images/feedback.png"
 
 const EssayTextWrapper = styled.div`
   padding: 1rem;
 `
 
-const EssayHeading = styled.h1``
-
+const EssayTitle = styled.h1``
+const EssayHeading = styled.h2``
 const EssayCodeText = styled.p`
   padding: 1rem;
   white-space: pre-line;
+  font-style: italic;
+`
+
+const EssayFigureText = styled.p`
   font-style: italic;
 `
 
@@ -24,191 +28,227 @@ const Image = styled.img`
 const EssayText = props => {
   return (
     <EssayTextWrapper>
-      <EssayHeading> A False Metaphysics of Time</EssayHeading>
-      <p>
-        In An Ecology of Time, Isabelle Stengers argues for the importance of
-        studying concerns as opposed to truth. Ecologists do not investigate
-        whether wolves or sheep are right, but are concerned instead with how
-        and why they interact the way they do. Stengers goes on to cite ways in
-        which claims of universal validity are damaging, especially in
-        inter-disciplinary and cross-cultural contexts. Humans are born with a
-        set of naïve schemata. These schemata are conceptual frameworks used to
-        filter and understand the array of sensorial data constituting the real.
-        As humans develop, they undergo a process of accommodation and
-        assimilation; either assimilating sensorial data to fit with extant
-        schemata or modifying schemata in accordance with un-assimilable data (a
-        similar structure to that of scientific progress proposed by Thomas
-        Kuhn). These schemata have a much closer relationship to utility than
-        truth. Over the course of development these schemata are bootstrapped
-        into other human functions, becoming increasingly difficult to identify
-        and extricate. Take, for example, children’s early proxying of
-        sequentiality for causality (Werner and Kaplan, 1963). This early
-        misattribution may be the basis of lay-logic as it assimilates
-        developmentally decreasing egocentrism while integrating concepts of
-        agency and reversibility (Piaget, 1972). As we grapple with an
-        increasingly tangled knot of overlapping, complex systems, many of which
-        operate in non-linear ways, our naïve schemata are torn apart from the
-        inside, producing paradoxical results. As systems operating on
-        non-anthropocentric time scales proliferate it becomes useful to develop
-        ways of hacking our naïve schemata to keep up. To articulate a more
-        useful understanding of time we start with Einstein and Bergson.
-        According to Einstein’s special relativity, there is no universal time.
-        Time is always relative to space of a given system and the speed of
-        light (which is constant). Bergson argued that Einstein’s theory was a
-        theory of the behavior of clocks with little to say about the
-        metaphysics of time. For an illustrative example of how experience and
-        metaphysics of time diverge see the paradox of aging. Bergson does not
-        define time, believing that any conceptualization of time would only
-        distort the flow of phenomena. Unlike Bergson we are not interested in
-        the true metaphysics of time, we are interested in useful maps. To
-        combine Bergson’s assessment that the nature of time is duration and
-        turn it into a scalpel with which we can cut into the world we turn to
-        Husserl. For Husserl, time consists of sequential simultaneities.
-        Simultaneities are made up of a protention (a virtual anticipation), a
-        retention (virtual memory) and a perception (the real perceived via
-        phenomena).
-      </p>
-      <Image src={HursellTime}></Image>
-      <p>
-        For each agent in the system that we ascribe duration to we must imagine
-        it carried along this timeline. As Yuk Hui asserts in Recursivity and
-        Contingency, Heidegger’s concept of the Dasein extends far beyond the
-        human, at least to technology, which also possesses a sense of. ‘being
-        there’. In this spirit we attempt to highjack or hack our naïve
-        schemata. Taking Bergson’s investigative method of intuition, we
-        acknowledge their shortcomings but using them as tools to think in
-        non-human ways.
-      </p>
-
+      <EssayTitle>
+        {" "}
+        Time and Terraforming: Farming with Recursive Algorithms{" "}
+      </EssayTitle>
       <p>
         {" "}
-        /* In Terraforming, Benjamin Bratton highlights the differing ways
-        computational models have been used to predict the future. Citing the
-        examples of both insurance firms and climate science, Bratton highlights
-        the way calculation of cost by market systems has frequently devalued
-        the future in favor of the present, this is a subset of what was
-        formulated by Hayek as the capitalist pricing problem. The market as a
-        network of exchange linking supply and demand frequently undervalues
-        externalities. The market has been historically bounded by the range of
-        information accessible to humans-as-assemblage. In the age of planetary
-        computation, we are in the process of moving from
-        industrial/technical-human assemblage to
-        industrial/technical-algorithmic–assemblage. Accompanying this shift the
-        economy increasingly moves to second order processes, trading options is
-        capitalizing not on an asymmetry of information of present state of the
-        system but on asymmetry in accuracy of protentions. As projections of
-        the future manifest as capital evaluations in the present, the manifold
-        virtual flows down from banks of computers running at breakneck speed
-        and cascades (via capital) into physical effects. We want an
-        encyclopedia of effects of agents operating at differential temporal
-        speeds, a bestiary that allows us to handle these effects as they loop
-        strangely back from the future. */ We aim to use this map of time as a
-        tool to design ways of accelerating or decelerating time within specific
-        systems.
+        In An Ecology of Time, Stengers argues for concerns over truth
+        (Stengers, 2013). She cites the example of an ecological study; an
+        ecologist is not concerned with whether the wolf or the sheep is right
+        only how their concerns produce behavioral patterns. Stengers believes
+        inter-disciplinary study is plagued by an obsession with truth. Here we
+        articulate a metaphysics of time which we use to analyze cybernetic
+        systems. These ideas are applied to intercropping systems to diagram
+        temporal behaviors that compromise algorithmic attempts at agricultural
+        optimization.{" "}
       </p>
-      <EssayHeading>Time and Cybernetics </EssayHeading>
-
+      <EssayHeading> 1. A False Metaphysics of Time</EssayHeading>
       <p>
-        For this project, we set out to investigate how different temporalities
-        (defined as volatility) for agents in a system or collection of systems
-        interact as simultaneous processes and as a whole. For us, relative
-        temporalities of subsystems within larger systems pose an interesting
-        question: How might an agent distort a system using/altering its own or
-        others experience of time? To use the example of a process plant as a
-        real time system. A process plant will typically contain a variety of
-        sensors (thermocouple, flow meters), actuators (valves, heat exchangers)
-        and measured variables (temperature, pressure, flow, status of device)
-        to perform multiple operations and produce an output which they all
-        respond to. All these components will act (sense, produce a change) at
-        their respective temporal intervals. These components have feedback
-        loops to respond to changes in the state but have clearly defined
-        boundaries (diameter of pipe, volume of storage tank). In this example,
-        what would happen if a pump were to suddenly decrease or increase its
-        rotations which in turn would reduce the flow/pressure in the system?
-        How would the other components respond? Will they increase or decrease
-        the intervals by which they act? Another example illustrating the
-        importance of relative experiences of time in a collection of systems is
-        the relationship between the market and climate. The market seems to
-        operate on a much faster timescale than the climate which could
-        partially explain the markets delayed abilities to respond to climate’s
-        signals. This may also be explained by the poorly designed feedback
-        loops of the market. (It must be noted that both systems contain
-        subsystems of varying timescales). In a dynamic cybernetic world of
-        agents recursively reproducing themselves with different experiences of
-        non-linear time. How do agents coordinate themselves in relation to
-        other agents? Can manipulating the feedback loop of a system alter its
-        own experience of time and what effect (if any) does this have on the
-        rest of the wider system(s)? Can altering its own experience of time by
-        desensitizing its feedback loops?
+        Global scale computation makes humans increasingly aware of a tangled
+        knot of overlapping systems. At the scale of assemblage, humans have a
+        growing ability to perceive and affect changes on systems operating on
+        ‘non-human’ time scales. This obsolesces lay philosophies of time. Our
+        concern is to outline a more useful metaphysics of time.{" "}
       </p>
+      <p>
+        We start with Einstein and Bergson. Bergson argued that Einstein’s
+        theory of relativity was a theory of the behavior of clocks with little
+        relevance to metaphysics of time (Bergson and Jacobson, 1999).
+        Unfortunately, Bergson doesn’t outline a definition, believing any
+        conceptualization of time distorts the flow of phenomena. We need a
+        scalpel to cut into the world. Building on Bergson’s ideas in a
+        structured way we turn to Husserl. For Husserl time consists of
+        sequential simultaneities, composed of a protention (virtual
+        anticipation), a retention (virtual memory) and a perception (real
+        perceived via phenomena) (Husserl, 1964).
+      </p>
+      <Image src={HursellTime}></Image>
+      <EssayFigureText>
+        {" "}
+        Figure 1. a diagram of Husserl’s conception of time.{" "}
+      </EssayFigureText>
+      <p>
+        Each system we ascribe duration to, we imagine carried along this
+        timeline (this is Bergson’s leap of intuition). This should not be
+        restricted to “humans”. This intuitive extension is like that made by
+        Yuk Hui in extending Heidegger’s concept of Dasein to technology, which
+        also has a sense of ‘being-there’ (Hui, 2019).
+      </p>
+      <EssayHeading>2. Time and Cybernetics </EssayHeading>
+      <p>
+        Armed with a model of time, we need a method of modelling complex
+        systems. Cybernetics is a method of analysis focused on causal loops.
+        Following cybernetic principles, systems are understood in terms of
+        sensors, controllers and environment (Wiener, Hill and Mitter, 2019).
+        Sensors detect changes in the environment, relaying them to the
+        controller, which perform operations.
+      </p>
+      <p>
+        Using the example of a processing plant as a real time system, a
+        processing plant contains a variety of sensors, actuators and measured
+        variables to perform operations and produce an output which they all
+        respond to. These components act (sense, produce a change) within their
+        respective temporal limits. Components have homeostatic loops, but have
+        clearly defined boundaries (diameter of pipe, volume of storage tank).
+        What would happen if a pump suddenly decreased its rotations, reducing
+        the flow/pressure in the system? How would the other components respond?
+        Will they modify the intervals by which they act? The system will fail
+        to produce the defined output without a way to measure and respond to
+        changes in temporal interval of components. Cybernetic understandings
+        are open, bounded by utility.
+      </p>
+      <p>
+        In a dynamic cybernetic world where agents recursively reproduce
+        themselves with different experiences of non-linear time, how can agents
+        coordinate themselves in relation to other agents? Can manipulating the
+        feedback loop of a system alter agents’ experiences of time and what
+        effect does this have on the wider system?{" "}
+      </p>
+
       <EssayHeading>
-        Time on the Ground: Intercropping and Simulation
+        3. Time on the Ground: Intercropping and Simulation
       </EssayHeading>
       <p>
-        /*Intercropped fields are an entanglement of different systems, moving
-        at different times. The Stack, a geopolitical model loosely based on
-        TCP/IP structures, can be used as a lens to trance the relationships
-        between these systems. We see the users as the plants, pollinators and
-        pests. The interface layer are the perceptual bottlenecks of the global
-        computation. In intercropping systems there are many bottlenecks;
-        farmers uploading observations, sensors wired into tractors, soil and
-        plants, photographs taken by drones and satellites. Addresses are
-        free-form aggregations of data in the software used to track
-        agricultural data. The city layer is the space within this network that
-        each participant has access to; while a plant has ability to access the
-        software spaces, the programmer is likely totally disconnected from
-        conditions in the soil, especially those directly imperceptible to
-        humans. The cloud layer is the technological infrastructure tying these
-        threads together, the layer of roaming algorithms and
-        corporate-software-state control. The earth layer is the substance every
-        other layer is composed of, the raw matter.*/ Our artefact is a map of
-        an intercropping system. Like all maps it is highly simplified. The map
-        is a simulation. It takes four agents (soybean, sugarcane, pollinator
-        and plant destroyer), defines their internal structure and interactions
-        with their environment. Underneath these agents the simulation stretches
-        the control mechanisms of capital and a fungal agent. Both are symbiotic
-        partners that are manifested in the environment through the altered
-        behavioral patterners of their infected partners. By repeatedly running
-        the simulation and interpreting results we slowly build an ecological
-        bestiary, a plan of the coiling and uncoiling of time based on different
-        patterns of growth, death, reproduction and survival of the intercropped
-        agents. The simulation operates on Husserl’s time. Every frame is a
-        simultaneity, the move between frames is a sequential updating of all
-        information in the system. As it stands the simulation, like many
-        cybernetic systems has rigid limited protention and laser cut sequential
-        retentions. The simultaneity and subsequent retention constitute the
-        ‘inside’ of each agent, these slot neatly into schemata. The protention
-        is a range of values that the system stands ready to accept. These are
-        values can be contingent relative to the system and it is this
-        contingency that generates the ‘effect’ of time. In Technical Mentality,
-        Simondon characterizes linear thinking as being grounded in axioms at
-        one end and proceeding in sequential, discrete steps. The implication of
-        this is that contingency is needed to establish any temporality
-        otherwise the conclusions of the thought would be manifested immediately
-        from the axioms. The unfolding of time in our system is characterized by
-        the periodic measurement of values generated by processes external to
-        the system. Potential Aside – Recursion and Contingency*. Each agent is
-        a system in miniature (the system fractalizes). As our agents navigate
-        time, they are blind four times over to their environment: Agents cannot
-        pick up on contingent changes happening at higher rates than their
-        temporal interval. Agents struggle to determine causality in systems
-        moving out of sync with their temporal interval. Agents struggle to
-        establish causality due to increments at finer precision than that to
-        which they measure. Agents struggle to establish causality in occurring
-        over time periods that stretch the limits of their retention. These
-        blind spots involve temporal asymmetries. The artefact diagram maps
-        methods of bottoming out a system that proceeds from simultaneity to
-        simultaneity via a recursive movement. Recursive Acceleration: reducing
-        the temporal interval via a positive feedback process enables run-away
-        processes to proliferate more easily. As the object reaches the upper
-        frame limit of the simulation the simulation loses utility and drifts
-        free of reality. The agent that recursively increases its speed must
-        survive long enough to reach escape velocity. Recursive Fractalization:
-        at each recursive step the agent generates new objects for the system to
-        track. As the scope of the real in the simultaneity widens eventually
-        the algorithm can no longer bear the weight.
+        Intercropping is a crucible to test these ideas. Technological
+        developments have been the driving force in most farming practices
+        (Lewis, 1998). Hyper-febrile chemical sensors move the system away from
+        individual sensing capacities, into the territory of the assemblage.
+        This is accompanied by deployment of agricultural algorithms with vast
+        retentions and perceptual capabilities operating at break-neck speeds.
+        Within a capitalist system, imposing a Darwinian drive towards
+        optimization, individuals or community units cannot compete with
+        distributed techno-capital assemblages. It remains to be seen whether
+        techno-capital engineering can escape the temporality of the extant
+        ecosystem. Intercropping is fertile soil to explore these ideas, where
+        technology, societal structures, plants, pollinators and the climate
+        interact, each a complex system with its own rate of passage through
+        time.
+      </p>
+      <p>
+        Our artefact is a simulation of an intercropping system. It takes four
+        agents (soybean, sugarcane, pollinator and plant destroyer), defines
+        their internal structure and interactions with their environment.
+        Underneath these agents the simulation stretches the control mechanisms
+        of capital and an alien fungus. Both symbiotic partners that are
+        manifested in the environment through altered behavioral patterns of
+        their infected partners. By repeatedly running the simulation and
+        interpreting results we slowly build an ecological bestiary, a plan of
+        the coiling and uncoiling of time based on patterns of growth, death,
+        reproduction and survival of intercropped agents.
+      </p>
+      <p>
+        The simulation operates on Husserl’s time. Each frame a simultaneity,
+        the move between frames a sequential updating of information in the
+        system. The simulation, like many cybernetic systems, has rigidly
+        limited protentions and precision-cut sequential retentions. The
+        simultaneity and subsequent retention constitute the ‘inside’ of each
+        agent. The protention is a range of values that the system stands ready
+        to accept. The unfolding of time is characterized by periodic
+        measurement of values generated by processes external to each system.{" "}
+      </p>
+      <p>
+        Each agent is a system in miniature (the system fractalizes), and
+        carries in its structure blind spots. These blind spots often involve
+        temporal asymmetries. The artefact diagrams methods of bottoming out a
+        system that proceeds from simultaneity to simultaneity via a recursive
+        movement.{" "}
+      </p>
+      <ol>
+        <li>
+          {" "}
+          Recursive Acceleration: reducing the temporal interval via a positive
+          feedback process enables run-away processes to proliferate. As the
+          object reaches the upper frame limit of the simulation the simulation
+          loses utility and drifts free of reality. The agent that recursively
+          increases its speed must survive long enough to reach escape velocity.
+        </li>
+        <li>
+          {" "}
+          Recursive Fractalization: at each recursive step the agent generates
+          new objects for the system to track. As the scope of the real in the
+          simultaneity widens eventually the algorithm can no longer bear the
+          weight.{" "}
+        </li>
+      </ol>
+      <p>
+        These methods of disrupting a cybernetic control are talismans,
+        reminding us to maintain open relationships with cybernetic systems, to
+        play with them. Cybernetic systems, by definition, interact with their
+        environments. The components of the system continually form
+        relationships with the outside, and so expose themselves to potential
+        run-away effects. As Sadie Plant says “Invulnerability would be
+        homeostasis, an absolute and fatal stability” (Plant, 1998).
+      </p>
+      <EssayHeading> Glossary: </EssayHeading>
+      <p>
+        {" "}
+        System - ‘A set of elements or parts that is coherently organized and
+        interconnected in a pattern or structure that produces a characteristic
+        set of behaviours.. ‘ (Meadows, 2008 , pp 188)
+      </p>
+      <p>
+        Real-Time system - A real-time system operates with a time constraint,
+        where the time that the output produced is significant. In other words,
+        producing the output at some other time than the required time may be
+        meaningless.
+      </p>
+      <p>
+        System theory - “A framework for conceptualising the self-regulatory and
+        self-organising processes governing inputs to systems, the
+        transformations of inputs into outputs and feedback loops”
+      </p>
+      <p>
+        Feedback Loops - “The mechanism (rule or information flow or signal)
+        that allows a change in a stock to affect a flow into or out of that
+        same stock” (Meadows, 2008 , pp 188)
+      </p>
+      <Image src={Feedback}></Image>
+      <p>
+        Recursivity - “A recursive function (in Computer Science) simply means a
+        function that calls itself until a halting state is reached.” (Yuk Hui).
+        “Programming makes use of routines called ‘procedures’ which may need to
+        execute other procedures. In self-referential programming, the procedure
+        calls itself.” (Ron Eglash)
+      </p>
+      <EssayCodeText>
+        {`void RecursiveFunction(State state){ 
+                ---series of perceived events/procedures--- 
+
+                RecursiveFunction(state); 
+          } 
+          `}
+      </EssayCodeText>
+      <p>
+        {" "}
+        Temporal Interval – The clock time between an agent’s simultaneities.
       </p>
       <EssayHeading>References: </EssayHeading>
+
+      <p>Bergson, H., & Jacobson, L. (1999). Duration and Simultaneity: Bergson and the Einsteinian Universe (Philosophy of Science) (2nd ed.). Clinamen Press Ltd. </p> 
+      <p>Eglash, R. (1999). African Fractals. New Brunswick: Rutgers University Press.  </p>
+      <p> Hui, Y. (2017). Preface: The time of execution. Executing Practices. </p>
+      <p> Hui, Y. (2019). Recursivity and Contingency (Media Philosophy). Rowman & Littlefield Publishers. </p>
+      <p>Husserl, E. (1964). The Phenomenology of Internal Time-Consciousness. Indiana University Press.</p>
+      <p>Lewis, T. (1998). Evolution of farm management information systems. Computers and Electronics in Agriculture, 19(3), 233–248. https://doi.org/10.1016/s0168-1699(97)00040-9 </p>
+      <p>Meadows, D. H., & Wright, D. (2008). Thinking in Systems: A Primer. Chelsea Green Publishing.</p>
+
+
+
+
+
+ 
+
+Meadows, D. H., & Wright, D. (2008). Thinking in Systems: A Primer. Chelsea Green Publishing. 
+
+Plant, S. (1998). Zeros + ones. London: Fourth Estate. 
+
+Simondon, G. (2009). Technical mentality. Parrhesia, 7(1), 17–27. http://blogs.bbk.ac.uk/artsresearch/files/2016/09/gilbert-simondon-technical-mentality.pdf 
+
+Stengers, I. (2013). Introductory Notes on an Ecology of Practices. Cultural Studies Review, 11(1), 183–196. https://doi.org/10.5130/csr.v11i1.3459 
+
+Wiener, N., Hill, D., & Mitter, S. (2019). Cybernetics or Control and Communication in the Animal and the Machine, Reissue of the 1961 second edition (The MIT Press) (Reprint ed.). The MIT Press. 
       <p>
         Donella H. Meadows (2008), Thinking in Systems: A Primer Washington, DC:
         Earthscan.
@@ -223,53 +263,14 @@ const EssayText = props => {
         (http://www.scholarpedia.org/w/index.php?title=Pinning_control&action=cite&rev=14329)
       </p>
 
-        <p>
-          Chen Xu, Xinsong Yang, Jianquan Lu,Member, IEEE, Jianwen Feng, Fuad E.
-          Alsaadi, and Tasawar Hayat (2018), Finite-Time Synchronization of
-          Networks via Quantized Intermittent Pinning Control. IEEE TRANSACTIONS
-          ON CYBERNETICS, VOL. 48, NO. 10
-        </p>
+      <p>
+        Chen Xu, Xinsong Yang, Jianquan Lu,Member, IEEE, Jianwen Feng, Fuad E.
+        Alsaadi, and Tasawar Hayat (2018), Finite-Time Synchronization of
+        Networks via Quantized Intermittent Pinning Control. IEEE TRANSACTIONS
+        ON CYBERNETICS, VOL. 48, NO. 10
+      </p>
 
-        <p> Yuk Hui (), Preface: The Time of, Execution</p>
-        <EssayHeading> Glossary: </EssayHeading>
-        <p>
-          {" "}
-          System - ‘A set of elements or parts that is coherently organized and
-          interconnected in a pattern or structure that produces a
-          characteristic set of behaviours.. ‘ (Meadows, 2008 , pp 188)
-        </p>
-        <p> 
-        Real-Time system - A real-time system operates with a time constraint,
-        where the time that the output produced is significant. In other words,
-        producing the output at some other time than the required time may be
-        meaningless.
-        </p>
-        <p>
-          System theory - “A framework for conceptualising the self-regulatory
-          and self-organising processes governing inputs to systems, the
-          transformations of inputs into outputs and feedback loops”
-        </p>
-        <p>
-          Feedback Loops - “The mechanism (rule or information flow or signal)
-          that allows a change in a stock to affect a flow into or out of that
-          same stock” (Meadows, 2008 , pp 188)
-        </p>
-        <Image src={Feedback}></Image>
-        <p>
-          Recursivity - “A recursive function (in Computer Science) simply means
-          a function that calls itself until a halting state is reached.” (Yuk
-          Hui). “Programming makes use of routines called ‘procedures’ which may
-          need to execute other procedures. In self-referential programming, the
-          procedure calls itself.” (Ron Eglash)
-        </p>
-        <EssayCodeText>{`void RecursiveFunction(State state){ 
-                ---series of perceived events/procedures--- 
-
-                RecursiveFunction(state); 
-          } 
-          `}
-        </EssayCodeText>
-        <p> Temporal Interval – The clock time between an agent’s simultaneities.</p>
+      <p> Yuk Hui (), Preface: The Time of, Execution</p>
     </EssayTextWrapper>
   )
 }

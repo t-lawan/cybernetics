@@ -73,6 +73,13 @@ class Main extends React.Component {
                 If you're reading this, audio isn't supported. 
             </audio>
             </div>
+            <Title> Soundscape </Title>
+            <div>
+              <audio autoPlay={true} controls>
+                <source src={DeathSpirals} type="audio/wav" />
+                If you're reading this, audio isn't supported. 
+            </audio>
+            </div>
             <DownloadSection>
             <ClickableLink href={"https://marie-leuder.s3.eu-west-2.amazonaws.com/INTERCROPPING_SIMULATION.zip"} target="__blank"> Download Simulation for Mac</ClickableLink>
 

@@ -233,44 +233,10 @@ const EssayText = props => {
       <p>Husserl, E. (1964). The Phenomenology of Internal Time-Consciousness. Indiana University Press.</p>
       <p>Lewis, T. (1998). Evolution of farm management information systems. Computers and Electronics in Agriculture, 19(3), 233–248. https://doi.org/10.1016/s0168-1699(97)00040-9 </p>
       <p>Meadows, D. H., & Wright, D. (2008). Thinking in Systems: A Primer. Chelsea Green Publishing.</p>
-
-
-
-
-
- 
-
-Meadows, D. H., & Wright, D. (2008). Thinking in Systems: A Primer. Chelsea Green Publishing. 
-
-Plant, S. (1998). Zeros + ones. London: Fourth Estate. 
-
-Simondon, G. (2009). Technical mentality. Parrhesia, 7(1), 17–27. http://blogs.bbk.ac.uk/artsresearch/files/2016/09/gilbert-simondon-technical-mentality.pdf 
-
-Stengers, I. (2013). Introductory Notes on an Ecology of Practices. Cultural Studies Review, 11(1), 183–196. https://doi.org/10.5130/csr.v11i1.3459 
-
-Wiener, N., Hill, D., & Mitter, S. (2019). Cybernetics or Control and Communication in the Animal and the Machine, Reissue of the 1961 second edition (The MIT Press) (Reprint ed.). The MIT Press. 
-      <p>
-        Donella H. Meadows (2008), Thinking in Systems: A Primer Washington, DC:
-        Earthscan.
-      </p>
-      <p>
-        K. Erciyes, Distributed Real-Time Systems, Computer Communications and
-        Networks, (https://doi.org/10.1007/978-3-030-22570-4_1)
-      </p>
-      <p>
-        Mario di Bernardo and Pietro DeLellis (2014), Pinning control.
-        Scholarpedia, 9(8):29958
-        (http://www.scholarpedia.org/w/index.php?title=Pinning_control&action=cite&rev=14329)
-      </p>
-
-      <p>
-        Chen Xu, Xinsong Yang, Jianquan Lu,Member, IEEE, Jianwen Feng, Fuad E.
-        Alsaadi, and Tasawar Hayat (2018), Finite-Time Synchronization of
-        Networks via Quantized Intermittent Pinning Control. IEEE TRANSACTIONS
-        ON CYBERNETICS, VOL. 48, NO. 10
-      </p>
-
-      <p> Yuk Hui (), Preface: The Time of, Execution</p>
+      <p>Plant, S. (1998). Zeros + ones. London: Fourth Estate.</p>
+      <p>Simondon, G. (2009). Technical mentality. Parrhesia, 7(1), 17–27. http://blogs.bbk.ac.uk/artsresearch/files/2016/09/gilbert-simondon-technical-mentality.pdf </p>
+      <p>Stengers, I. (2013). Introductory Notes on an Ecology of Practices. Cultural Studies Review, 11(1), 183–196. https://doi.org/10.5130/csr.v11i1.3459 </p>
+      <p>Wiener, N., Hill, D., & Mitter, S. (2019). Cybernetics or Control and Communication in the Animal and the Machine, Reissue of the 1961 second edition (The MIT Press) (Reprint ed.). The MIT Press. </p>
     </EssayTextWrapper>
   )
 }

@@ -64,7 +64,6 @@ class Main extends React.Component {
   }
 
   onSelectAgent = agent => {
-    console.log("Agent: " + agent)
     this.setState({
       url: agent
     })

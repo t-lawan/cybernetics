@@ -1,10 +1,10 @@
 export const VideoUrls = {
-    POLLINATOR: 'https://www.youtube.com/watch?v=G-CqhoX_vck',
-    PLANT_DESTROYER: 'https://www.youtube.com/watch?v=oVv2ioUWgsc',
-    MAIN: "https://www.youtube.com/watch?v=v7X57vP6bgo",
-    FUNGI: "https://www.youtube.com/watch?v=CIlr1ZUeGMk",
-    SOYBEAN: "https://www.youtube.com/watch?v=FZCtNqT_3uQ",
-    SUGARCANE: 'https://www.youtube.com/watch?v=hp3Xx9ogKyk',
-    CAPITAL: 'https://www.youtube.com/watch?v=ahNfpMGqjEE',
+    POLLINATOR: 'https://youtu.be/6rFZonKl0Ic',
+    PLANT_DESTROYER: 'https://youtu.be/Hzb_5wRQetk',
+    MAIN: "https://youtu.be/jIyx77klGRY",
+    FUNGI: "https://youtu.be/KaYPzkDLT3U",
+    SOYBEAN: "https://youtu.be/1UN5xQKGwdI",
+    SUGARCANE: 'https://youtu.be/1UN5xQKGwdI',
+    CAPITAL: 'https://youtu.be/KaYPzkDLT3U',
     
 }

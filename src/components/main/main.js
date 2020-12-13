@@ -94,7 +94,7 @@ class Main extends React.Component {
               target="__blank"
             >
               {" "}
-              Time and Terraforming: Farming with Recursive Algorithms
+              Time and Terraforming: Farming with Recursive Algorithms (PDF)
             </ClickableLink>
             <EssayHeading> Link to Simulation</EssayHeading>
             <ClickableLink
@@ -104,7 +104,7 @@ class Main extends React.Component {
               target="__blank"
             >
               {" "}
-              Download Simulation for Mac
+              Download Simulation for Mac (.zip)
             </ClickableLink>
           </DownloadSection>
           <AudioSection>

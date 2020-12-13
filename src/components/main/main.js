@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { TwoColumnSection } from "../styles/styles"
+import { TwoColumnSection, size } from "../styles/styles"
 import ScrollableNarrative, {
   ClickableText
 } from "../scrollable-narrative/scrollable-narrative"
@@ -19,6 +19,9 @@ const VideoSection = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  @media (max-width: ${size.tablet}) {
+  height: auto;
+  }
 `
 
 const AudioSection = styled.div`

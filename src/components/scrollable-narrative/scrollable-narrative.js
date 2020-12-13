@@ -7,6 +7,7 @@ import Destroyer from '../../images/destroyer.png';
 import Fungi from '../../images/fungi.png';
 import Soy from '../../images/soy.png';
 import Pollinator from '../../images/pollinator.png';
+import { size } from "../styles/styles";
 
 
 const ScrollableNarrativeWrapper = styled.div`
@@ -14,6 +15,10 @@ const ScrollableNarrativeWrapper = styled.div`
   padding: 1rem;
   display: flex;
   align-items: center;
+
+  @media (max-width: ${size.tablet}) {
+    height: auto;
+  }
 `
 const ScrollableTextBox = styled.div`
   height: 60vh;

@@ -155,7 +155,9 @@ class AudioPlayer extends React.Component {
       volume: 1,
       prevVolume: 0
     }
+    this.audio = props.url;
   }
+
   audio = Contagion
   language
   skipPercentage = 0.02

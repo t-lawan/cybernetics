@@ -1,11 +1,15 @@
 import React from "react"
 import styled from "styled-components"
 import { TwoColumnSection } from "../styles/styles"
-import ScrollableNarrative, { ClickableText } from "../scrollable-narrative/scrollable-narrative";
-import VideoPlayer from "../video-player/video-player";
-import { VideoUrls } from "../utils/config";
-import EssayText from "../essay-text/essay-text";
+import ScrollableNarrative, {
+  ClickableText
+} from "../scrollable-narrative/scrollable-narrative"
+import VideoPlayer from "../video-player/video-player"
+import { VideoUrls } from "../utils/config"
+import EssayText, { EssayHeading } from "../essay-text/essay-text"
 import DeathSpirals from "../assets/DeathSpirals.wav"
+import Contagion from "../assets/Contagion.mp3"
+import AudioPlayer from "../audio-player/audio-player"
 // import Simulation from '../assets/INTERCROPPING_SIMULATION.zip';
 const VideoSection = styled.div`
   height: 100vh;
@@ -17,20 +21,19 @@ const VideoSection = styled.div`
 `
 
 const AudioSection = styled.div`
-    padding: 1rem;
+  padding: 1rem;
 `
-const Title = styled.h3`
-`
+const Title = styled.h3``
 
 const DownloadSection = styled.section`
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  padding: 1rem;
+  padding: 1rem; */
 `
 
 export const ClickableLink = styled.a`
   cursor: pointer;
-
+  display: block;
   color: green;
   text-decoration: underline;
   text-decoration-color: black;
@@ -42,51 +45,81 @@ export const ClickableLink = styled.a`
 
 class Main extends React.Component {
   constructor(props) {
-    super(props);
-    
+    super(props)
+
     this.state = {
       url: VideoUrls.MAIN
     }
   }
 
-  onSelectAgent = (agent) => {
-    console.log('Agent: ' + agent);
+  onSelectAgent = agent => {
+    console.log("Agent: " + agent)
     this.setState({
-        url: agent
+      url: agent
     })
-
   }
 
   render() {
     return (
-      <TwoColumnSection>
-        <ScrollableNarrative onSelectAgent={(agent) => this.onSelectAgent(agent)}  />
-        <VideoSection>
+      <>
+        <TwoColumnSection>
+          <ScrollableNarrative
+            onSelectAgent={agent => this.onSelectAgent(agent)}
+          />
+          <VideoSection>
             <VideoPlayer url={this.state.url} />
-            {this.state.url !== VideoUrls.MAIN ? <ClickableText onClick={() => this.onSelectAgent(VideoUrls.MAIN)}>RETURN TO SIMULATION</ClickableText> : null}
-        </VideoSection>
-        <AudioSection>
-            <Title> Podcast </Title>
-            <div>
-              <audio autoPlay={true} controls>
-                <source src={DeathSpirals} type="audio/wav" />
-                If you're reading this, audio isn't supported. 
+            {this.state.url !== VideoUrls.MAIN ? (
+              <ClickableText onClick={() => this.onSelectAgent(VideoUrls.MAIN)}>
+                RETURN TO SIMULATION
+              </ClickableText>
+            ) : null}
+          </VideoSection>
+        </TwoColumnSection>
+        <TwoColumnSection>
+          <DownloadSection>
+            <EssayHeading> Report</EssayHeading>
+            <ClickableLink
+              href={
+                "https://marie-leuder.s3.eu-west-2.amazonaws.com/INTERCROPPING_SIMULATION.zip"
+              }
+              target="__blank"
+            >
+              {" "}
+              Time and Terraforming: Farming with Recursive Algorithms
+            </ClickableLink>
+            <EssayHeading> Link to Simulation</EssayHeading>
+            <ClickableLink
+              href={
+                "https://marie-leuder.s3.eu-west-2.amazonaws.com/INTERCROPPING_SIMULATION.zip"
+              }
+              target="__blank"
+            >
+              {" "}
+              Download Simulation for Mac
+            </ClickableLink>
+          </DownloadSection>
+          <AudioSection>
+          <Title> Podcast </Title>
+          <AudioPlayer url={Contagion} />
+          {/* <div>
+            <audio autoPlay={true} controls>
+              <source src={DeathSpirals} type="audio/wav" />
+              If you're reading this, audio isn't supported.
             </audio>
-            </div>
-            <Title> Soundscape </Title>
-            <div>
-              <audio autoPlay={true} controls>
-                <source src={DeathSpirals} type="audio/wav" />
-                If you're reading this, audio isn't supported. 
+          </div> */}
+          <Title> Soundscape </Title>
+          <AudioPlayer url={DeathSpirals} />
+          {/* <div>
+            <audio autoPlay={true} controls>
+              <source src={DeathSpirals} type="audio/wav" />
+              If you're reading this, audio isn't supported.
             </audio>
-            </div>
-            <DownloadSection>
-            <ClickableLink href={"https://marie-leuder.s3.eu-west-2.amazonaws.com/INTERCROPPING_SIMULATION.zip"} target="__blank"> Download Simulation for Mac</ClickableLink>
-
-            </DownloadSection>
+          </div> */}
         </AudioSection>
-        <EssayText />
-      </TwoColumnSection>
+        </TwoColumnSection>
+
+        {/* <EssayText /> */}{" "}
+      </>
     )
   }
 }

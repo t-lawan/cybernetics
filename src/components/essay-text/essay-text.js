@@ -8,7 +8,7 @@ const EssayTextWrapper = styled.div`
 `
 
 const EssayTitle = styled.h1``
-const EssayHeading = styled.h2``
+export const EssayHeading = styled.h2``
 const EssayCodeText = styled.p`
   padding: 1rem;
   white-space: pre-line;

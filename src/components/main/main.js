@@ -33,6 +33,13 @@ const DownloadSection = styled.section`
   /* display: flex;
   flex-direction: row;
   padding: 1rem; */
+
+  padding: 2rem;
+  padding-top: 1rem;
+  @media (max-width: ${size.tablet}) {
+
+  padding: 0rem;
+  }
 `
 
 export const ClickableLink = styled.a`
@@ -101,7 +108,7 @@ class Main extends React.Component {
             </ClickableLink>
           </DownloadSection>
           <AudioSection>
-          <Title> Podcast </Title>
+          <EssayHeading> Podcast </EssayHeading>
           <AudioPlayer url={Contagion} />
           {/* <div>
             <audio autoPlay={true} controls>
@@ -109,7 +116,7 @@ class Main extends React.Component {
               If you're reading this, audio isn't supported.
             </audio>
           </div> */}
-          <Title> Soundscape </Title>
+          <EssayHeading> Soundscape </EssayHeading>
           <AudioPlayer url={DeathSpirals} />
           {/* <div>
             <audio autoPlay={true} controls>

@@ -10,6 +10,7 @@ import EssayText, { EssayHeading } from "../essay-text/essay-text"
 import DeathSpirals from "../assets/DeathSpirals.wav"
 import Contagion from "../assets/Contagion.mp3"
 import AudioPlayer from "../audio-player/audio-player"
+import Essay from '../assets/time_and_farming.pdf'
 // import Simulation from '../assets/INTERCROPPING_SIMULATION.zip';
 const VideoSection = styled.div`
   height: 100vh;
@@ -79,9 +80,7 @@ class Main extends React.Component {
           <DownloadSection>
             <EssayHeading> Report</EssayHeading>
             <ClickableLink
-              href={
-                "https://marie-leuder.s3.eu-west-2.amazonaws.com/INTERCROPPING_SIMULATION.zip"
-              }
+              href={Essay}
               target="__blank"
             >
               {" "}

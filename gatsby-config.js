@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Room Eighteen`,
+    title: `Time and Terraforming: Farming with Recursive Algorithms`,
     description: `Intercropping Simulation`,
     author: `@gatsbyjs`,
   },
@@ -24,7 +24,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Room Eighteen`,
+        name: `Time and Terraforming: Farming with Recursive Algorithms`,
         short_name: `Room Eighteen`,
         start_url: `/`,
         background_color: `#fff`,

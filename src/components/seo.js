@@ -26,7 +26,7 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const defaultTitle = "Room Eighteen"
+  const defaultTitle = "Time and Terraforming: Farming with Recursive Algorithms"
 
   return (
     <Helmet

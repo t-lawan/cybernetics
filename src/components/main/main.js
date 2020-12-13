@@ -108,7 +108,7 @@ class Main extends React.Component {
           </DownloadSection>
           <AudioSection>
           <EssayHeading> Podcast </EssayHeading>
-          <AudioPlayer url={Contagion} />
+          <AudioPlayer url={"https://marie-leuder.s3.eu-west-2.amazonaws.com/room18podcast.mp3"} />
           {/* <div>
             <audio autoPlay={true} controls>
               <source src={DeathSpirals} type="audio/wav" />

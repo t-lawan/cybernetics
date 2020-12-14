@@ -107,7 +107,7 @@ class Main extends React.Component {
             </ClickableLink>
           </DownloadSection>
           <AudioSection>
-          <EssayHeading> Podcast </EssayHeading>
+          {/* <EssayHeading> Podcast </EssayHeading> */}
           <AudioPlayer url={"https://marie-leuder.s3.eu-west-2.amazonaws.com/room18podcast.mp3"} />
           {/* <div>
             <audio autoPlay={true} controls>
@@ -115,7 +115,7 @@ class Main extends React.Component {
               If you're reading this, audio isn't supported.
             </audio>
           </div> */}
-          <EssayHeading> Soundscape </EssayHeading>
+          {/* <EssayHeading> Soundscape </EssayHeading> */}
           <AudioPlayer url={DeathSpirals} />
           {/* <div>
             <audio autoPlay={true} controls>

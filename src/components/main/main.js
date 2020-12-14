@@ -10,7 +10,7 @@ import EssayText, { EssayHeading } from "../essay-text/essay-text"
 import DeathSpirals from "../assets/DeathSpirals.wav"
 import Contagion from "../assets/Contagion.mp3"
 import AudioPlayer from "../audio-player/audio-player"
-import Essay from '../assets/time_and_farming.pdf'
+import Essay from "../assets/time_and_farming.pdf"
 // import Simulation from '../assets/INTERCROPPING_SIMULATION.zip';
 const VideoSection = styled.div`
   height: 100vh;
@@ -20,12 +20,15 @@ const VideoSection = styled.div`
   justify-content: center;
   flex-direction: column;
   @media (max-width: ${size.tablet}) {
-  height: auto;
+    height: auto;
   }
 `
 
 const AudioSection = styled.div`
   padding: 1rem;
+  @media (max-width: ${size.tablet}) {
+    padding: 0rem;
+  }
 `
 const Title = styled.h3``
 
@@ -37,8 +40,7 @@ const DownloadSection = styled.section`
   padding: 2rem;
   padding-top: 1rem;
   @media (max-width: ${size.tablet}) {
-
-  padding: 0rem;
+    padding: 0rem;
   }
 `
 
@@ -88,10 +90,7 @@ class Main extends React.Component {
         <TwoColumnSection>
           <DownloadSection>
             <EssayHeading> Report</EssayHeading>
-            <ClickableLink
-              href={Essay}
-              target="__blank"
-            >
+            <ClickableLink href={Essay} target="__blank">
               {" "}
               Time and Terraforming: Farming with Recursive Algorithms (PDF)
             </ClickableLink>
@@ -107,25 +106,28 @@ class Main extends React.Component {
             </ClickableLink>
           </DownloadSection>
           <AudioSection>
-          <EssayHeading> Host voices </EssayHeading>
-          <AudioPlayer url={"https://marie-leuder.s3.eu-west-2.amazonaws.com/room18podcast.mp3"} />
-          {/* <div>
+            <EssayHeading> Host voices </EssayHeading>
+            <AudioPlayer
+              url={
+                "https://marie-leuder.s3.eu-west-2.amazonaws.com/room18podcast.mp3"
+              }
+            />
+            {/* <div>
             <audio autoPlay={true} controls>
               <source src={DeathSpirals} type="audio/wav" />
               If you're reading this, audio isn't supported.
             </audio>
           </div> */}
-          <EssayHeading> ((())) </EssayHeading>
-          <AudioPlayer url={DeathSpirals} />
-          {/* <div>
+            <EssayHeading> ((())) </EssayHeading>
+            <AudioPlayer url={DeathSpirals} />
+            {/* <div>
             <audio autoPlay={true} controls>
               <source src={DeathSpirals} type="audio/wav" />
               If you're reading this, audio isn't supported.
             </audio>
           </div> */}
-        </AudioSection>
+          </AudioSection>
         </TwoColumnSection>
-
         {/* <EssayText /> */}{" "}
       </>
     )
